@@ -29,7 +29,7 @@ body{
 .card {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 150px;
+    margin-left: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
