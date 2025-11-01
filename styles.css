@@ -5,7 +5,6 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
-
   background: url("bg.jpg") no-repeat center center fixed;
   background-size: cover;
 }
@@ -35,7 +34,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   background-color: rgba(74, 74, 74);
   border-radius: 10px;
   padding: 30px 40px;
@@ -112,14 +110,14 @@ p {
   transform: scale(1.15);
 }
 
-/* 📱 Portrait mode (phones) */
-@media (max-width: 768px) {
+/* 📱 Portrait mode */
+@media (max-width: 768px) and (min-height: 500px) {
   body {
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100svh; 
+    min-height: 100svh;
     height: 100dvh;
     margin: 0;
   }
@@ -128,5 +126,23 @@ p {
     margin: 0;
     height: 350px;
     width: 200px;
+  }
+}
+
+/* 📱 Landscape fallback — detects short screens instead of orientation */
+@media (max-height: 500px) {
+  body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    margin: 0;
+    height: 250px;
+    width: 180px;
+    padding: 20px 25px;
   }
 }
