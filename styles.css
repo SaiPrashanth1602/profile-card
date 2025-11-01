@@ -130,6 +130,7 @@ p {
 
   .card {
     margin: 0;
+    height: fit-content;
   }
 }
 
