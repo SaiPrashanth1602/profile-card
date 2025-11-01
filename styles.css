@@ -108,7 +108,7 @@ p {
 
 
 /* ---------- MOBILE (Portrait) ---------- */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     background: none;
     background-color: black;
