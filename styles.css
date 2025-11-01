@@ -106,12 +106,20 @@ p {
   animation: glow-spin 6s linear infinite;
 }
 
+@keyframes glow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-/* ---------- MOBILE (Portrait) ---------- */
-@media (max-width: 768px) {
+/* ---------- MOBILE FIX ---------- */
+@media screen and (max-width: 768px) {
   body {
-    background: none;
-    background-color: black;
+    background: none !important;
+    background-color: black !important;
     justify-content: center;
     align-items: center;
   }
