@@ -13,5 +13,6 @@ CSS3 for styling and layout (flexbox, gradients, animations)
 
 PREVIEW:  
   
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/eb0f052d-0801-4208-ac01-8c303203df8e" />
+<img width="800" height="449" alt="image" src="https://github.com/user-attachments/assets/51348c63-536e-4278-8262-cec75be41984" />
+
 
