@@ -1,4 +1,14 @@
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
 
 html {
   overflow-x: hidden;
@@ -19,7 +29,7 @@ body {
 .card {
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 20%;
+  margin-left: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +39,8 @@ body {
   background-color: rgba(74, 74, 74);
   border-radius: 10px;
   padding: 30px 40px;
-  height: fit-content;
+  height: 65%;
+  width: 225px;
   position: relative;
 }
 
@@ -101,60 +112,21 @@ p {
   transform: scale(1.15);
 }
 
-/* Default (Laptop / Desktop) stays same */
+/* 📱 Portrait mode (phones) */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh; 
+    height: 100dvh;
+    margin: 0;
+  }
 
-/* Portrait styles */
-body.portrait {
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100svh;
-  height: 100dvh;
-  margin: 0;
-}
-
-body.portrait .card {
-  margin: 0;
-  height: 350px;
-  width: 200px;
-}
-
-/* Landscape styles */
-body.landscape {
-  background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  
-  /* 👇 These two ensure full visible height accounting for browser bars */
-  min-height: 100svh;
-  height: 100dvh;
-
-  background-image: url(bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-
-body.landscape .card {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 10%;
-  height: 70%;
-  width: 220px;
-  padding: 25px 30px;
-}
-
-/* For laptop/desktop view */
-@media (min-width: 769px) {
-  body:not(.portrait):not(.landscape) .card {
-    height: 200px !important; /* force override */
-    width: 250px !important;
+  .card {
+    margin: 0;
+    height: 350px;
+    width: 200px;
   }
 }
-
