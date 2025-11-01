@@ -108,7 +108,7 @@ p {
 
 
 /* ---------- MOBILE (Portrait) ---------- */
-@media (max-width: 768px) and (orientation: portrait) {
+@media (max-width: 768px) {
   body {
     background: none;
     background-color: black;
