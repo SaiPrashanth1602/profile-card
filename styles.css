@@ -115,7 +115,11 @@ p {
   }
 }
 
+<<<<<<< HEAD
 /* ---------- MOBILE FIX ---------- */
+=======
+/* ---------- MOBILE (Portrait) ---------- */
+>>>>>>> 68d56d112cee03ff45189e603ef1063dfe95e4c9
 @media screen and (max-width: 768px) {
   body {
     background: none !important;
