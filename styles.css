@@ -115,7 +115,7 @@ p {
 /* 📱 Portrait mode */
 @media (max-width: 768px) and (orientation: portrait) {
   body {
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
+    background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
