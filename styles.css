@@ -117,13 +117,3 @@ p {
 }
 
 
-@media (max-width: 768px) {
-    body{
-        background: rgb(151, 91, 91);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
-}
