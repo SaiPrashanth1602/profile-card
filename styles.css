@@ -117,18 +117,18 @@ p {
 }
 
 
-@media (max-width: 768px) {
-    body{
-        background: rgb(0, 0, 0);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
+@media (max-width: 500px) {
+  body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh; /* fixes height issue on mobile */
+    height: 100dvh; /* keeps it centered even when bars show/hide */
+    margin: 0;
+  }
 
-    .card{
-      margin: auto;
-    }
-
-    
+  .card {
+    margin: 0;
+  }
 }
