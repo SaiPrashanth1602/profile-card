@@ -129,12 +129,17 @@ body.landscape {
   padding-left: 5%;
   padding-right: 5%;
   
+  /* 👇 These two ensure full visible height accounting for browser bars */
+  min-height: 100svh;
+  height: 100dvh;
+
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
 }
+
 
 body.landscape .card {
   margin-top: auto;
@@ -144,3 +149,12 @@ body.landscape .card {
   width: 220px;
   padding: 25px 30px;
 }
+
+/* For laptop/desktop view */
+@media (min-width: 769px) {
+  body:not(.portrait):not(.landscape) .card {
+    height: 200px !important; /* force override */
+    width: 250px !important;
+  }
+}
+
