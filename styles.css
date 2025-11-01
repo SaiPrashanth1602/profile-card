@@ -120,5 +120,8 @@ p {
 @media (max-width: 768px) {
     body{
         background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
