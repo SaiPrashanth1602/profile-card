@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Intro Card</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+  function updateOrientation() {
+    if (window.matchMedia("(orientation: landscape)").matches) {
+      document.body.classList.add("landscape");
+      document.body.classList.remove("portrait");
+    } else {
+      document.body.classList.add("portrait");
+      document.body.classList.remove("landscape");
+    }
+  }
+
+  window.addEventListener("orientationchange", updateOrientation);
+  window.addEventListener("resize", updateOrientation);
+  window.addEventListener("load", updateOrientation);
+</script>
+
 </head>
 <body>
     
