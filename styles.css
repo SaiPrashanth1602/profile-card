@@ -17,10 +17,8 @@ html {
 body {
   display: flex;
   background-color: rgb(0, 0, 0);
-
   height: 100vh;
   overflow: hidden;
-
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -40,7 +38,6 @@ body {
 
   background-color: rgba(74, 74, 74);
   border-radius: 10px;
-
   padding: 30px 40px;
   height: 65%;
   width: 225px;
@@ -53,9 +50,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-
   background: conic-gradient(from 0deg, #ff0000, #ff7f00, #4b0082, #8b00ff, #ff0000);
-
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -87,7 +82,6 @@ body {
   border: 2px solid #000;
 }
 
-
 h2 {
   font-weight: 100;
   color: rgb(235, 228, 228);
@@ -118,19 +112,15 @@ p {
   transform: scale(1.15);
 }
 
-
-@media (max-width: 768px) {
+/* 📱 Portrait mode */
+@media (max-width: 768px) and (orientation: portrait) {
   body {
     background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
-    
-    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100svh;
-    /* fixes height issue on mobile */
     height: 100dvh;
-    /* keeps it centered even when bars show/hide */
     margin: 0;
   }
 
@@ -141,5 +131,22 @@ p {
   }
 }
 
+/* 📱 Landscape mode (phones only) */
+@media (max-width: 768px) and (orientation: landscape) {
+  body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #292929);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100dvh;
+  }
 
-/* Landscape mode on phones */
+  .card {
+    margin: auto;
+    height: 70%;
+    width: 220px;
+    padding: 25px 30px;
+  }
+}
